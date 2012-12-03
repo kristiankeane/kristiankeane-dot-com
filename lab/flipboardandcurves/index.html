@@ -1,0 +1,1422 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<title>Sociagram</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/formalize.css">
+	<link rel="stylesheet" href="css/jquery.css">
+	<link rel="stylesheet" href="css/typography.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pill.css">
+  <link rel="stylesheet" href="css/dash.css">
+  <link rel="stylesheet" href="css/home.css">
+
+</head>
+<body>
+
+<!--=-=-=-=-=-TRANSITION MODAL=-=-=-=-=-->
+  <div class="modal">
+    <div class="fbholder">
+      <img src="img/facebookplaceholder.png" alt="FACEBOOK PLACEHOLDER"/>
+    </div>
+    <div class="instholder">
+      <img src="img/instructions.png" alt="INSTRUCTIONS PLACEHOLDER"/>
+      <div class="loading">Loading your stuff...<div id="progress-fill"></div></div>
+      <a href="#" class="ok">Ok, let's get started!</a>
+    </div>
+    <div class="curtainfringe"></div>
+  </div>
+
+<!--=-=-=-=-=-FASTRACK MODAL=-=-=-=-=-->
+  <div class="fasttrack-modal-container"></div>
+
+  <div class="fasttrack-modal">
+
+    <table class="fasttrack-modal-table">
+      <thead>
+        <tr>
+          <th colspan="2">To</th>
+          <th>Message</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="img/fbpic.png" alt="person"/></td>
+          <td>Camille Moriarti</td>
+          <td>Hi Camille, Happy Birthday you son of...</td>
+          <td><a href="#" class="modal-camera">Record Video</a></td>
+        </tr>
+        <tr>
+          <td><img src="img/fbpic.png" alt="person"/></td>
+          <td>Joseph G. Smithison</td>
+          <td>Hi Joe, Happy Birthday you son of...</td>
+          <td><a href="#" class="modal-camera">Record Video</a></td>
+        </tr>
+        <tr>
+          <td><img src="img/fbpic.png" alt="person"/></td>
+          <td>Sal Paradise</td>
+          <td>Hi Sal, Happy Birthday you son of...</td>
+          <td><a href="#" class="modal-camera">Record Video</a></td>
+        </tr>
+        <tr>
+          <td><img src="img/fbpic.png" alt="person"/></td>
+          <td>Carlo Marx</td>
+          <td>Hi Carlo, Happy Birthday you son of...</td>
+          <td><a href="#" class="modal-camera">Record Video</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a class="modal-btn" href="#">Close</a>
+
+  </div>
+
+<!--=-=-=-=-=-HEADER=-=-=-=-=-->
+  <header>
+
+    <div class="header-container">
+      <h1><a href="#" title="Go to Home Page"><img src="img/SG-logo-variant.png" alt="Sociagram"></a></h1>
+
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#" class="nav-current">Dashboard</a></li>
+          <li><a href="#">Inbox</a></li>
+          <li><a href="#">Scheduled</a></li>
+          <li><a href="#">Sent</a></li>
+          <li class="has-dropdown">
+            <a href="#">My Account <span class="caret">&nbsp;</span></a>
+            <ul class="nav-dropdown">
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">My Profile</a></li>
+              <li class="last"><a href="#">Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div><!--header container-->
+
+  </header>
+
+
+<!--=-=-=-=-=-HOME / LANDING PAGE=-=-=-=-=-->
+  <div id="introcontent">
+
+    <div id="buttonholder">
+      <ul>
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+      </ul>
+    </div>
+
+
+
+    <section id="canvasHolder">
+
+      <div id="frame1">
+        <section>
+          <h2>Give the gift of you!</h2>
+          <p>Create rich video messages for any occasion...<br/>Posted right to Facebook and Twitter</p>
+        </section>
+        <canvas id="canvas1"></canvas>
+      </div><!--frame-->
+
+      <div id="frame2">
+        <section>
+          <h2>Create a Video Message!</h2>
+          <p>Create rich video messages for any occasion...<br/>Posted right to Facebook and Twitter</p>
+        </section>
+        <canvas id="canvas2"></canvas>
+      </div><!--frame-->
+
+      <div id="frame3">
+        <section>
+          <h2>Connect via Facebook!</h2>
+          <p>Create rich video messages for any occasion...<br/>Posted right to Facebook and Twitter</p>
+        </section>
+        <canvas id="canvas3"></canvas>
+      </div><!--frame-->
+
+      <div id="frame4">
+        <section>
+          <h2>Give the gift of you!</h2>
+          <p>Create rich video messages for any occasion...<br/>Posted right to Facebook and Twitter</p>
+        </section>
+        <canvas id="canvas4"></canvas>
+      </div><!--frame-->
+
+    </section>
+
+<!--=-=-=-=-=-HOME / LANDING PAGE BOTTOM CONTENT BELOW CURVES=-=-=-=-=-->
+    <section id="secondary">
+
+      <h2 class="secondarylogo"><img src="img/logo340pxWide2.png" alt="logo"/>Logo</h2>
+      <a href="#" class="facebookbutton"><img src="img/fbbuttonicon.png" alt="logo"/>Log in using <span>Facebook</span></a>
+
+      <section class="rightcol">
+
+        <h4>Lorem ipsum dolor sit amet</h4>
+
+        <p><img src="img/cameraiconalone.png" alt="camera icon"/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <section class="leftcol">
+          <div id="counter">
+
+            <div class="numholder">
+
+              <div class="flipper">
+                <div class="numfront">1</div>
+                <div class="numback">
+                  <span>2<span>
+                  </div>
+                </div>
+
+                <div class="flipper">
+                  <div class="numfront">0</div>
+                  <div class="numback">
+                    <span>1<span>
+                    </div>
+                  </div>
+
+                  <div class="flipper flipped">
+                    <div class="numfront">NOTHING</div>
+                    <div class="numback">
+                      <span>0<span>
+                      </div>
+                    </div>
+
+                  </div><!--numholder-->
+
+                  <div class="numholder">
+
+                    <div class="flipper">
+                      <div class="numfront">3</div>
+                      <div class="numback">
+                        <span>4<span>
+                        </div>
+                      </div>
+
+                      <div class="flipper">
+                        <div class="numfront">2</div>
+                        <div class="numback">
+                          <span>3<span>
+                          </div>
+                        </div>
+
+                        <div class="flipper flipped">
+                          <div class="numfront">NOTHING</div>
+                          <div class="numback">
+                            <span>2<span>
+                            </div>
+                          </div>
+
+                        </div><!--numholder-->
+
+                        <div class="numholder">
+
+                          <div class="flipper">
+                            <div class="numfront">8</div>
+                            <div class="numback">
+                              <span>9<span>
+                              </div>
+                            </div>
+
+                            <div class="flipper">
+                              <div class="numfront">7</div>
+                              <div class="numback">
+                                <span>8<span>
+                                </div>
+                              </div>
+
+                              <div class="flipper flipped">
+                                <div class="numfront">NOTHING</div>
+                                <div class="numback">
+                                  <span>7<span>
+                                  </div>
+                                </div>
+
+                              </div><!--numholder-->
+
+
+                              <div class="numholder">
+
+                                <div class="flipper">
+                                  <div class="numfront">1</div>
+                                  <div class="numback">
+                                    <span>2<span>
+                                    </div>
+                                  </div>
+
+                                  <div class="flipper">
+                                    <div class="numfront">0</div>
+                                    <div class="numback">
+                                      <span>1<span>
+                                      </div>
+                                    </div>
+
+                                    <div class="flipper flipped">
+                                      <div class="numfront">NOTHING</div>
+                                      <div class="numback">
+                                        <span>0<span>
+                                        </div>
+                                      </div>
+
+                                    </div><!--numholder-->
+
+
+                                    <div class="numholder">
+
+                                      <div class="flipper">
+                                        <div class="numfront">3</div>
+                                        <div class="numback">
+                                          <span>4<span>
+                                          </div>
+                                        </div>
+
+                                        <div class="flipper">
+                                          <div class="numfront">2</div>
+                                          <div class="numback">
+                                            <span>3<span>
+                                            </div>
+                                          </div>
+
+                                          <div class="flipper flipped">
+                                            <div class="numfront">NOTHING</div>
+                                            <div class="numback">
+                                              <span>2<span>
+                                              </div>
+                                            </div>
+
+                                          </div><!--numholder-->
+
+
+                                          <div class="numholder">
+
+                                            <div class="flipper">
+                                              <div class="numfront">6</div>
+                                              <div class="numback">
+                                                <span>7<span>
+                                                </div>
+                                              </div>
+
+                                              <div class="flipper">
+                                                <div class="numfront">5</div>
+                                                <div class="numback">
+                                                  <span>6<span>
+                                                  </div>
+                                                </div>
+
+                                                <div class="flipper flipped">
+                                                  <div class="numfront">NOTHING</div>
+                                                  <div class="numback">
+                                                    <span>5<span>
+                                                    </div>
+                                                  </div>
+
+                                                </div><!--numholder-->
+
+                                              </div><!--counter-->
+
+                                              <h3 class="countertitle">Supergrams Sent</h3>
+
+                                            </section><!--leftcol-->
+
+                                          </section><!--secondary-->
+
+                                          <div class="media">
+                                            <div>
+                                              <img src="img/techcrunchlogo.png" id="media icon"/>
+                                              <img src="img/techcrunchlogo.png" id="media icon"/>
+                                              <img src="img/techcrunchlogo.png" id="media icon"/>
+                                              <img src="img/techcrunchlogo.png" id="media icon"/>
+                                              <img src="img/techcrunchlogo.png" id="media icon"/>
+                                            </div>
+                                          </div>
+
+                                        </div><!--END HOME PAGE-->
+
+<!--=-=-=-=-=-LOADING PLACEHOLDER IMAGE (pill image)=-=-=-=-=-->
+
+                                        <img src="img/listplaceholder.png" id="listplaceholder"/>
+
+<!--=-=-=-=-=-DASHBOARD INTERFACE=-=-=-=-=-->
+
+<!--=-=-=-=-=-TOP DRAWER=-=-=-=-=-->
+                                        <div class="drawer-area">
+
+                                          <div id="drawer-open" class="closed">
+
+                                           <div id="video-container">
+                                            <video poster="img/poster-new.jpg">
+                                             <source src="movie.mp4" type="video/mp4" />
+                                             <source src="movie.ogg" type="video/ogg" />
+                                             Your browser does not support the video tag.
+                                           </video>
+
+                                           <div class="controls" style="display:none;">
+                                             <a class="backbutton" href=""><div></div></a>
+                                             <a href="" class="recordbutton"><div></div></a>
+                                             <a href="" class="playbutton"><div></div></a>
+                                             <a class="cancelbutton" href=""><div></div></a>
+                                           </div>
+                                         </div><!--video-container-->
+
+
+                                         <form>
+
+                                          <input class="blue-pill-text" id="social-modules-pop-up" type="text">
+
+                                          <label for="social-modules-pop-up" class="blue-pill-title first-blue-pill-title">To: <span class="pill-bullet">&bull;</span></label>
+
+                                          <input class="blue-pill-text clear-r" id="recipient" type="text" placeholder="Henry Chinaski">
+
+                                          <label for="recipient" class="blue-pill-title">From:</label>
+
+                                          <textarea class="blue-pill-text right" id="message-field"></textarea>
+
+                                          <label for="message-field" class="blue-pill-title right for-text-area">Message:</label>
+
+
+
+                                          <div class="radio-container">
+
+                                           <input type="radio" id="send-now" name="delivery-date" class="styled" checked>
+
+                                           <label for="send-now">Send Now</label>
+
+                                           <input type="radio" id="date-button-0" name="delivery-date" class="styled">
+
+                                           <label class="last">
+                                             <input type="textbox" id="date-0" class="date" value="Schedule for another time">
+                                           </label>
+
+                                           <a href="#">Send</a>
+
+                                         </div><!--close radio container-->
+
+                                       </form>
+
+                                     </div><!--drawer area-->
+
+                                   </div><!--drawer open-->
+
+<!--=-=-=-=-=-FAVORITES=-=-=-=-=-->
+
+                                   <div role="main" id="manage">
+
+                                     <div class="favorites-bar clearfix">
+
+                                       <ul class="favorites-list clearfix">
+
+                                         <li>
+
+                                          <a href="#" title="Sal Paradise">
+                                            <img src="img/fbpic.png" alt="person">
+                                          </a>
+                                        </li>
+
+                                        <li>
+                                         <a href="#" title="Dorothy Johnson">
+                                           <img src="img/fbpic.png" alt="person">
+                                         </a>
+                                       </li>
+
+                                       <li>
+                                         <a href="#" title="Dean Moriarti">
+                                           <img src="img/fbpic.png" alt="person">
+                                         </a>
+                                       </li>
+
+                                       <li>
+                                         <a href="#" title="Old Bull Lee">
+                                           <img src="img/fbpic.png" alt="person">
+                                         </a>
+                                       </li>
+
+                                       <li>
+                                         <a href="#" title="Remi Boncoeur">
+                                           <img src="img/fbpic.png" alt="person">
+                                         </a>
+                                       </li>
+
+                                       <li>
+                                         <a href="#" title="Carlo Marx">
+                                           <img src="img/fbpic.png" alt="person">
+                                         </a>
+                                       </li>
+
+                                     </ul>
+
+                                     <a href="#" class="handle">Create a Supergram</a>
+                                     <a href="#" >Add a Contact</a>
+
+                                   </div><!--favorites bar-->
+
+<!--=-=-=-=-=-MAIN PILL LIST=-=-=-=-=-->
+
+                                   <div class="socilist-container">
+
+                                    <h2 class="list-title top-title">My Friends Birthday Reminders</h2>
+
+                                    <a href="#" class="fasttrack">FastTrack</a>
+                                    <a href="#" class="exit">Exit</a>
+
+                                    <ul class="socilist">
+                                      <!--=-=-=-=-=-START OF SINGLE PILL HTML=-=-=-=-=-->
+                                      <li>
+                                        <div class="chkbox">
+                                          <span class="chkbox-box"></span>
+                                          <span class="chkbox-check"></span>
+                                        </div>
+
+                                        <div class="front"><!--begin front of pill-->
+
+                                          <a href="#" class="remove">remove</a>
+                                          <img src="img/fbpic.png" alt="person"/>
+                                          <div class="imgmask"></div>
+                                          <div>
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                          </div>
+
+                                          <span>Hi Sal, Happy Birthday buddy, how's it going? I'm fine, the summer has really gone...</span>
+
+                                          <textarea rows="1" placeholder="Hi Joe, Happy Birthday you son of..." tabindex="1"></textarea>
+
+                                          <a href="#" class="open">Create</a>
+                                          <a href="#" class="fb">Twitter</a>
+                                          <a href="#" class="tw">Facebook</a>
+
+                                        </div><!--end front of pill-->
+
+                                        <div class="back"><!--begin back of pill-->
+
+                                          <div class="titlebox">
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                            <a href="#" class="backsave">Save</a>
+                                          </div>
+
+                                          <video poster="img/poster-new.jpg">
+                                            <source src="movie.mp4" type="video/mp4" />
+                                            <source src="movie.ogg" type="video/ogg" />
+                                            Your browser does not support the video tag.
+                                          </video>
+
+                                          <div class="controls">
+                                            <a class="backbutton" href=""><div></div></a>
+                                            <a href="" class="recordbutton"><div></div></a>
+                                            <a href="" class="playbutton"><div></div></a>
+                                            <a class="cancelbutton" href=""><div></div></a>
+                                          </div>
+
+                                          <textarea></textarea>
+
+                                          <div class="delivery-area">
+
+                                            <h4>Delivery Date...</h4>
+
+                                            <form>
+                                              <input type="radio" id="set-date-1" name="delivery-date" class="styled" checked>
+                                              <label for="set-date-1"><p>Sal's Birthday</p> <span>(Feb 14, 2012 at 10am)</span></label>
+                                              <input type="radio" id="date-button-1" name="delivery-date" class="styled">
+                                              <label class="last">
+                                                <input type="textbox" id="date-1" class="date" value="Schedule for another time">
+                                              </label>
+                                            </form>
+
+                                          </div>
+
+                                          <div class="social-select-area">
+
+                                            <h4>Deliver To...</h4>
+
+                                            <form>
+                                              <input type="checkbox" id="fb-box" name="network-select" class="styled2" checked="checked">
+                                              <label for="fb-box" class="fb-icon-container"><span id="include-facebook-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="twt-box" name="network-select" class="styled2">
+                                              <label for="twt-box" class="twt-icon-container"><span id="include-twitter-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="email-box" name="network-select" class="styled2">
+                                              <label for="email-box" class="email-icon-container"><span id="include-email-icon" class="social-sprites ir">Facebook</span></label>
+                                            </form>
+
+                                          </div>
+                                        </div><!--end of back of pill-->
+                                        <a href="#" class="favorite ir" title="Add Sal Paradise to Favorites">Favorite</a>
+                                      </li><!--=-=-=-=-=-END OF SINGLE PILL HTML=-=-=-=-=-->
+
+
+
+                                                                            <!--=-=-=-=-=-START OF SINGLE PILL HTML=-=-=-=-=-->
+                                      <li>
+                                        <div class="chkbox">
+                                          <span class="chkbox-box"></span>
+                                          <span class="chkbox-check"></span>
+                                        </div>
+
+                                        <div class="front"><!--begin front of pill-->
+
+                                          <a href="#" class="remove">remove</a>
+                                          <img src="img/fbpic.png" alt="person"/>
+                                          <div class="imgmask"></div>
+                                          <div>
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                          </div>
+
+                                          <span>Hi Sal, Happy Birthday buddy, how's it going? I'm fine, the summer has really gone...</span>
+
+                                          <textarea rows="1" placeholder="Hi Joe, Happy Birthday you son of..." tabindex="1"></textarea>
+
+                                          <a href="#" class="open">Create</a>
+                                          <a href="#" class="fb">Twitter</a>
+                                          <a href="#" class="tw">Facebook</a>
+
+                                        </div><!--end front of pill-->
+
+                                        <div class="back"><!--begin back of pill-->
+
+                                          <div class="titlebox">
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                            <a href="#" class="backsave">Save</a>
+                                          </div>
+
+                                          <video poster="img/poster-new.jpg">
+                                            <source src="movie.mp4" type="video/mp4" />
+                                            <source src="movie.ogg" type="video/ogg" />
+                                            Your browser does not support the video tag.
+                                          </video>
+
+                                          <div class="controls">
+                                            <a class="backbutton" href=""><div></div></a>
+                                            <a href="" class="recordbutton"><div></div></a>
+                                            <a href="" class="playbutton"><div></div></a>
+                                            <a class="cancelbutton" href=""><div></div></a>
+                                          </div>
+
+                                          <textarea></textarea>
+
+                                          <div class="delivery-area">
+
+                                            <h4>Delivery Date...</h4>
+
+                                            <form>
+                                              <input type="radio" id="set-date-1" name="delivery-date" class="styled" checked>
+                                              <label for="set-date-1"><p>Sal's Birthday</p> <span>(Feb 14, 2012 at 10am)</span></label>
+                                              <input type="radio" id="date-button-1" name="delivery-date" class="styled">
+                                              <label class="last">
+                                                <input type="textbox" id="date-1" class="date" value="Schedule for another time">
+                                              </label>
+                                            </form>
+                                            
+                                          </div>
+
+                                          <div class="social-select-area">
+
+                                            <h4>Deliver To...</h4>
+
+                                            <form>
+                                              <input type="checkbox" id="fb-box" name="network-select" class="styled2" checked="checked">
+                                              <label for="fb-box" class="fb-icon-container"><span id="include-facebook-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="twt-box" name="network-select" class="styled2">
+                                              <label for="twt-box" class="twt-icon-container"><span id="include-twitter-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="email-box" name="network-select" class="styled2">
+                                              <label for="email-box" class="email-icon-container"><span id="include-email-icon" class="social-sprites ir">Facebook</span></label>
+                                            </form>
+
+                                          </div>
+                                        </div><!--end of back of pill-->
+                                        <a href="#" class="favorite ir" title="Add Sal Paradise to Favorites">Favorite</a>
+                                      </li><!--=-=-=-=-=-END OF SINGLE PILL HTML=-=-=-=-=-->
+
+
+                                                                            <!--=-=-=-=-=-START OF SINGLE PILL HTML=-=-=-=-=-->
+                                      <li>
+                                        <div class="chkbox">
+                                          <span class="chkbox-box"></span>
+                                          <span class="chkbox-check"></span>
+                                        </div>
+
+                                        <div class="front"><!--begin front of pill-->
+
+                                          <a href="#" class="remove">remove</a>
+                                          <img src="img/fbpic.png" alt="person"/>
+                                          <div class="imgmask"></div>
+                                          <div>
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                          </div>
+
+                                          <span>Hi Sal, Happy Birthday buddy, how's it going? I'm fine, the summer has really gone...</span>
+
+                                          <textarea rows="1" placeholder="Hi Joe, Happy Birthday you son of..." tabindex="1"></textarea>
+
+                                          <a href="#" class="open">Create</a>
+                                          <a href="#" class="fb">Twitter</a>
+                                          <a href="#" class="tw">Facebook</a>
+
+                                        </div><!--end front of pill-->
+
+                                        <div class="back"><!--begin back of pill-->
+
+                                          <div class="titlebox">
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                            <a href="#" class="backsave">Save</a>
+                                          </div>
+
+                                          <video poster="img/poster-new.jpg">
+                                            <source src="movie.mp4" type="video/mp4" />
+                                            <source src="movie.ogg" type="video/ogg" />
+                                            Your browser does not support the video tag.
+                                          </video>
+
+                                          <div class="controls">
+                                            <a class="backbutton" href=""><div></div></a>
+                                            <a href="" class="recordbutton"><div></div></a>
+                                            <a href="" class="playbutton"><div></div></a>
+                                            <a class="cancelbutton" href=""><div></div></a>
+                                          </div>
+
+                                          <textarea></textarea>
+
+                                          <div class="delivery-area">
+
+                                            <h4>Delivery Date...</h4>
+
+                                            <form>
+                                              <input type="radio" id="set-date-1" name="delivery-date" class="styled" checked>
+                                              <label for="set-date-1"><p>Sal's Birthday</p> <span>(Feb 14, 2012 at 10am)</span></label>
+                                              <input type="radio" id="date-button-1" name="delivery-date" class="styled">
+                                              <label class="last">
+                                                <input type="textbox" id="date-1" class="date" value="Schedule for another time">
+                                              </label>
+                                            </form>
+                                            
+                                          </div>
+
+                                          <div class="social-select-area">
+
+                                            <h4>Deliver To...</h4>
+
+                                            <form>
+                                              <input type="checkbox" id="fb-box" name="network-select" class="styled2" checked="checked">
+                                              <label for="fb-box" class="fb-icon-container"><span id="include-facebook-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="twt-box" name="network-select" class="styled2">
+                                              <label for="twt-box" class="twt-icon-container"><span id="include-twitter-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="email-box" name="network-select" class="styled2">
+                                              <label for="email-box" class="email-icon-container"><span id="include-email-icon" class="social-sprites ir">Facebook</span></label>
+                                            </form>
+
+                                          </div>
+                                        </div><!--end of back of pill-->
+                                        <a href="#" class="favorite ir" title="Add Sal Paradise to Favorites">Favorite</a>
+                                      </li><!--=-=-=-=-=-END OF SINGLE PILL HTML=-=-=-=-=-->
+
+
+                                                                            <!--=-=-=-=-=-START OF SINGLE PILL HTML=-=-=-=-=-->
+                                      <li>
+                                        <div class="chkbox">
+                                          <span class="chkbox-box"></span>
+                                          <span class="chkbox-check"></span>
+                                        </div>
+
+                                        <div class="front"><!--begin front of pill-->
+
+                                          <a href="#" class="remove">remove</a>
+                                          <img src="img/fbpic.png" alt="person"/>
+                                          <div class="imgmask"></div>
+                                          <div>
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                          </div>
+
+                                          <span>Hi Sal, Happy Birthday buddy, how's it going? I'm fine, the summer has really gone...</span>
+
+                                          <textarea rows="1" placeholder="Hi Joe, Happy Birthday you son of..." tabindex="1"></textarea>
+
+                                          <a href="#" class="open">Create</a>
+                                          <a href="#" class="fb">Twitter</a>
+                                          <a href="#" class="tw">Facebook</a>
+
+                                        </div><!--end front of pill-->
+
+                                        <div class="back"><!--begin back of pill-->
+
+                                          <div class="titlebox">
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                            <a href="#" class="backsave">Save</a>
+                                          </div>
+
+                                          <video poster="img/poster-new.jpg">
+                                            <source src="movie.mp4" type="video/mp4" />
+                                            <source src="movie.ogg" type="video/ogg" />
+                                            Your browser does not support the video tag.
+                                          </video>
+
+                                          <div class="controls">
+                                            <a class="backbutton" href=""><div></div></a>
+                                            <a href="" class="recordbutton"><div></div></a>
+                                            <a href="" class="playbutton"><div></div></a>
+                                            <a class="cancelbutton" href=""><div></div></a>
+                                          </div>
+
+                                          <textarea></textarea>
+
+                                          <div class="delivery-area">
+
+                                            <h4>Delivery Date...</h4>
+
+                                            <form>
+                                              <input type="radio" id="set-date-1" name="delivery-date" class="styled" checked>
+                                              <label for="set-date-1"><p>Sal's Birthday</p> <span>(Feb 14, 2012 at 10am)</span></label>
+                                              <input type="radio" id="date-button-1" name="delivery-date" class="styled">
+                                              <label class="last">
+                                                <input type="textbox" id="date-1" class="date" value="Schedule for another time">
+                                              </label>
+                                            </form>
+                                            
+                                          </div>
+
+                                          <div class="social-select-area">
+
+                                            <h4>Deliver To...</h4>
+
+                                            <form>
+                                              <input type="checkbox" id="fb-box" name="network-select" class="styled2" checked="checked">
+                                              <label for="fb-box" class="fb-icon-container"><span id="include-facebook-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="twt-box" name="network-select" class="styled2">
+                                              <label for="twt-box" class="twt-icon-container"><span id="include-twitter-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="email-box" name="network-select" class="styled2">
+                                              <label for="email-box" class="email-icon-container"><span id="include-email-icon" class="social-sprites ir">Facebook</span></label>
+                                            </form>
+
+                                          </div>
+                                        </div><!--end of back of pill-->
+                                        <a href="#" class="favorite ir" title="Add Sal Paradise to Favorites">Favorite</a>
+                                      </li><!--=-=-=-=-=-END OF SINGLE PILL HTML=-=-=-=-=-->
+
+
+                                                                            <!--=-=-=-=-=-START OF SINGLE PILL HTML=-=-=-=-=-->
+                                      <li>
+                                        <div class="chkbox">
+                                          <span class="chkbox-box"></span>
+                                          <span class="chkbox-check"></span>
+                                        </div>
+
+                                        <div class="front"><!--begin front of pill-->
+
+                                          <a href="#" class="remove">remove</a>
+                                          <img src="img/fbpic.png" alt="person"/>
+                                          <div class="imgmask"></div>
+                                          <div>
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                          </div>
+
+                                          <span>Hi Sal, Happy Birthday buddy, how's it going? I'm fine, the summer has really gone...</span>
+
+                                          <textarea rows="1" placeholder="Hi Joe, Happy Birthday you son of..." tabindex="1"></textarea>
+
+                                          <a href="#" class="open">Create</a>
+                                          <a href="#" class="fb">Twitter</a>
+                                          <a href="#" class="tw">Facebook</a>
+
+                                        </div><!--end front of pill-->
+
+                                        <div class="back"><!--begin back of pill-->
+
+                                          <div class="titlebox">
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                            <a href="#" class="backsave">Save</a>
+                                          </div>
+
+                                          <video poster="img/poster-new.jpg">
+                                            <source src="movie.mp4" type="video/mp4" />
+                                            <source src="movie.ogg" type="video/ogg" />
+                                            Your browser does not support the video tag.
+                                          </video>
+
+                                          <div class="controls">
+                                            <a class="backbutton" href=""><div></div></a>
+                                            <a href="" class="recordbutton"><div></div></a>
+                                            <a href="" class="playbutton"><div></div></a>
+                                            <a class="cancelbutton" href=""><div></div></a>
+                                          </div>
+
+                                          <textarea></textarea>
+
+                                          <div class="delivery-area">
+
+                                            <h4>Delivery Date...</h4>
+
+                                            <form>
+                                              <input type="radio" id="set-date-1" name="delivery-date" class="styled" checked>
+                                              <label for="set-date-1"><p>Sal's Birthday</p> <span>(Feb 14, 2012 at 10am)</span></label>
+                                              <input type="radio" id="date-button-1" name="delivery-date" class="styled">
+                                              <label class="last">
+                                                <input type="textbox" id="date-1" class="date" value="Schedule for another time">
+                                              </label>
+                                            </form>
+                                            
+                                          </div>
+
+                                          <div class="social-select-area">
+
+                                            <h4>Deliver To...</h4>
+
+                                            <form>
+                                              <input type="checkbox" id="fb-box" name="network-select" class="styled2" checked="checked">
+                                              <label for="fb-box" class="fb-icon-container"><span id="include-facebook-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="twt-box" name="network-select" class="styled2">
+                                              <label for="twt-box" class="twt-icon-container"><span id="include-twitter-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="email-box" name="network-select" class="styled2">
+                                              <label for="email-box" class="email-icon-container"><span id="include-email-icon" class="social-sprites ir">Facebook</span></label>
+                                            </form>
+
+                                          </div>
+                                        </div><!--end of back of pill-->
+                                        <a href="#" class="favorite ir" title="Add Sal Paradise to Favorites">Favorite</a>
+                                      </li><!--=-=-=-=-=-END OF SINGLE PILL HTML=-=-=-=-=-->
+
+
+                                                                            <!--=-=-=-=-=-START OF SINGLE PILL HTML=-=-=-=-=-->
+                                      <li>
+                                        <div class="chkbox">
+                                          <span class="chkbox-box"></span>
+                                          <span class="chkbox-check"></span>
+                                        </div>
+
+                                        <div class="front"><!--begin front of pill-->
+
+                                          <a href="#" class="remove">remove</a>
+                                          <img src="img/fbpic.png" alt="person"/>
+                                          <div class="imgmask"></div>
+                                          <div>
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                          </div>
+
+                                          <span>Hi Sal, Happy Birthday buddy, how's it going? I'm fine, the summer has really gone...</span>
+
+                                          <textarea rows="1" placeholder="Hi Joe, Happy Birthday you son of..." tabindex="1"></textarea>
+
+                                          <a href="#" class="open">Create</a>
+                                          <a href="#" class="fb">Twitter</a>
+                                          <a href="#" class="tw">Facebook</a>
+
+                                        </div><!--end front of pill-->
+
+                                        <div class="back"><!--begin back of pill-->
+
+                                          <div class="titlebox">
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                            <a href="#" class="backsave">Save</a>
+                                          </div>
+
+                                          <video poster="img/poster-new.jpg">
+                                            <source src="movie.mp4" type="video/mp4" />
+                                            <source src="movie.ogg" type="video/ogg" />
+                                            Your browser does not support the video tag.
+                                          </video>
+
+                                          <div class="controls">
+                                            <a class="backbutton" href=""><div></div></a>
+                                            <a href="" class="recordbutton"><div></div></a>
+                                            <a href="" class="playbutton"><div></div></a>
+                                            <a class="cancelbutton" href=""><div></div></a>
+                                          </div>
+
+                                          <textarea></textarea>
+
+                                          <div class="delivery-area">
+
+                                            <h4>Delivery Date...</h4>
+
+                                            <form>
+                                              <input type="radio" id="set-date-1" name="delivery-date" class="styled" checked>
+                                              <label for="set-date-1"><p>Sal's Birthday</p> <span>(Feb 14, 2012 at 10am)</span></label>
+                                              <input type="radio" id="date-button-1" name="delivery-date" class="styled">
+                                              <label class="last">
+                                                <input type="textbox" id="date-1" class="date" value="Schedule for another time">
+                                              </label>
+                                            </form>
+                                            
+                                          </div>
+
+                                          <div class="social-select-area">
+
+                                            <h4>Deliver To...</h4>
+
+                                            <form>
+                                              <input type="checkbox" id="fb-box" name="network-select" class="styled2" checked="checked">
+                                              <label for="fb-box" class="fb-icon-container"><span id="include-facebook-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="twt-box" name="network-select" class="styled2">
+                                              <label for="twt-box" class="twt-icon-container"><span id="include-twitter-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="email-box" name="network-select" class="styled2">
+                                              <label for="email-box" class="email-icon-container"><span id="include-email-icon" class="social-sprites ir">Facebook</span></label>
+                                            </form>
+
+                                          </div>
+                                        </div><!--end of back of pill-->
+                                        <a href="#" class="favorite ir" title="Add Sal Paradise to Favorites">Favorite</a>
+                                      </li><!--=-=-=-=-=-END OF SINGLE PILL HTML=-=-=-=-=-->
+
+
+                                                                            <!--=-=-=-=-=-START OF SINGLE PILL HTML=-=-=-=-=-->
+                                      <li>
+                                        <div class="chkbox">
+                                          <span class="chkbox-box"></span>
+                                          <span class="chkbox-check"></span>
+                                        </div>
+
+                                        <div class="front"><!--begin front of pill-->
+
+                                          <a href="#" class="remove">remove</a>
+                                          <img src="img/fbpic.png" alt="person"/>
+                                          <div class="imgmask"></div>
+                                          <div>
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                          </div>
+
+                                          <span>Hi Sal, Happy Birthday buddy, how's it going? I'm fine, the summer has really gone...</span>
+
+                                          <textarea rows="1" placeholder="Hi Joe, Happy Birthday you son of..." tabindex="1"></textarea>
+
+                                          <a href="#" class="open">Create</a>
+                                          <a href="#" class="fb">Twitter</a>
+                                          <a href="#" class="tw">Facebook</a>
+
+                                        </div><!--end front of pill-->
+
+                                        <div class="back"><!--begin back of pill-->
+
+                                          <div class="titlebox">
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                            <a href="#" class="backsave">Save</a>
+                                          </div>
+
+                                          <video poster="img/poster-new.jpg">
+                                            <source src="movie.mp4" type="video/mp4" />
+                                            <source src="movie.ogg" type="video/ogg" />
+                                            Your browser does not support the video tag.
+                                          </video>
+
+                                          <div class="controls">
+                                            <a class="backbutton" href=""><div></div></a>
+                                            <a href="" class="recordbutton"><div></div></a>
+                                            <a href="" class="playbutton"><div></div></a>
+                                            <a class="cancelbutton" href=""><div></div></a>
+                                          </div>
+
+                                          <textarea></textarea>
+
+                                          <div class="delivery-area">
+
+                                            <h4>Delivery Date...</h4>
+
+                                            <form>
+                                              <input type="radio" id="set-date-1" name="delivery-date" class="styled" checked>
+                                              <label for="set-date-1"><p>Sal's Birthday</p> <span>(Feb 14, 2012 at 10am)</span></label>
+                                              <input type="radio" id="date-button-1" name="delivery-date" class="styled">
+                                              <label class="last">
+                                                <input type="textbox" id="date-1" class="date" value="Schedule for another time">
+                                              </label>
+                                            </form>
+                                            
+                                          </div>
+
+                                          <div class="social-select-area">
+
+                                            <h4>Deliver To...</h4>
+
+                                            <form>
+                                              <input type="checkbox" id="fb-box" name="network-select" class="styled2" checked="checked">
+                                              <label for="fb-box" class="fb-icon-container"><span id="include-facebook-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="twt-box" name="network-select" class="styled2">
+                                              <label for="twt-box" class="twt-icon-container"><span id="include-twitter-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="email-box" name="network-select" class="styled2">
+                                              <label for="email-box" class="email-icon-container"><span id="include-email-icon" class="social-sprites ir">Facebook</span></label>
+                                            </form>
+
+                                          </div>
+                                        </div><!--end of back of pill-->
+                                        <a href="#" class="favorite ir" title="Add Sal Paradise to Favorites">Favorite</a>
+                                      </li><!--=-=-=-=-=-END OF SINGLE PILL HTML=-=-=-=-=-->
+
+
+                                                                            <!--=-=-=-=-=-START OF SINGLE PILL HTML=-=-=-=-=-->
+                                      <li>
+                                        <div class="chkbox">
+                                          <span class="chkbox-box"></span>
+                                          <span class="chkbox-check"></span>
+                                        </div>
+
+                                        <div class="front"><!--begin front of pill-->
+
+                                          <a href="#" class="remove">remove</a>
+                                          <img src="img/fbpic.png" alt="person"/>
+                                          <div class="imgmask"></div>
+                                          <div>
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                          </div>
+
+                                          <span>Hi Sal, Happy Birthday buddy, how's it going? I'm fine, the summer has really gone...</span>
+
+                                          <textarea rows="1" placeholder="Hi Joe, Happy Birthday you son of..." tabindex="1"></textarea>
+
+                                          <a href="#" class="open">Create</a>
+                                          <a href="#" class="fb">Twitter</a>
+                                          <a href="#" class="tw">Facebook</a>
+
+                                        </div><!--end front of pill-->
+
+                                        <div class="back"><!--begin back of pill-->
+
+                                          <div class="titlebox">
+                                            <h3>Sal Paradise</h3>
+                                            <time datetime="2012-02-14">Feb 14 2012 - 10:00 AM</time>
+                                            <a href="#" class="backsave">Save</a>
+                                          </div>
+
+                                          <video poster="img/poster-new.jpg">
+                                            <source src="movie.mp4" type="video/mp4" />
+                                            <source src="movie.ogg" type="video/ogg" />
+                                            Your browser does not support the video tag.
+                                          </video>
+
+                                          <div class="controls">
+                                            <a class="backbutton" href=""><div></div></a>
+                                            <a href="" class="recordbutton"><div></div></a>
+                                            <a href="" class="playbutton"><div></div></a>
+                                            <a class="cancelbutton" href=""><div></div></a>
+                                          </div>
+
+                                          <textarea></textarea>
+
+                                          <div class="delivery-area">
+
+                                            <h4>Delivery Date...</h4>
+
+                                            <form>
+                                              <input type="radio" id="set-date-1" name="delivery-date" class="styled" checked>
+                                              <label for="set-date-1"><p>Sal's Birthday</p> <span>(Feb 14, 2012 at 10am)</span></label>
+                                              <input type="radio" id="date-button-1" name="delivery-date" class="styled">
+                                              <label class="last">
+                                                <input type="textbox" id="date-1" class="date" value="Schedule for another time">
+                                              </label>
+                                            </form>
+                                            
+                                          </div>
+
+                                          <div class="social-select-area">
+
+                                            <h4>Deliver To...</h4>
+
+                                            <form>
+                                              <input type="checkbox" id="fb-box" name="network-select" class="styled2" checked="checked">
+                                              <label for="fb-box" class="fb-icon-container"><span id="include-facebook-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="twt-box" name="network-select" class="styled2">
+                                              <label for="twt-box" class="twt-icon-container"><span id="include-twitter-icon" class="social-sprites ir">Facebook</span></label>
+                                              <input type="checkbox" id="email-box" name="network-select" class="styled2">
+                                              <label for="email-box" class="email-icon-container"><span id="include-email-icon" class="social-sprites ir">Facebook</span></label>
+                                            </form>
+
+                                          </div>
+                                        </div><!--end of back of pill-->
+                                        <a href="#" class="favorite ir" title="Add Sal Paradise to Favorites">Favorite</a>
+                                      </li><!--=-=-=-=-=-END OF SINGLE PILL HTML=-=-=-=-=-->
+
+                                    </ul><!--END OF PILL LIST-->
+
+                                    <a class="small-link" href="#">Missed a Birthday? View transpired Birthday Reminders.</a>
+                                    <a href="#" class="fasttrack bottom">FastTrack</a>
+                                    <a href="#" class="exit bottom">Exit</a>
+
+                                  </div><!--MANAGE-->
+
+<!--=-=-=-=-=-SCHEDULED SOCIGRAM LIST=-=-=-=-=-->
+                                  <div id="scheduled">
+
+                                   <h2 class="list-title">Sociagrams Scheduled for Delivery</h2>
+
+                                   <div class="fasttrack-modal bottom">
+                                     <table class="fasttrack-modal-table">
+                                       <thead>
+                                         <tr>
+                                           <th colspan="2">To</th>
+                                           <th>Message</th>
+                                           <th></th>
+                                         </tr>
+                                       </thead>
+
+                                       <tbody>
+                                         <tr>
+                                           <td><img src="img/fbpic.png" alt="person"/></td>
+                                           <td>Camille Moriarti</td>
+                                           <td>Hi Camille, Happy Birthday buddy, how's it going?...</td>
+                                           <td><a href="#" class="modal-camera">Record Video</a></td>
+                                         </tr>
+                                         <tr>
+                                           <td><img src="img/fbpic.png" alt="person"/></td>
+                                           <td>Joseph G. Smithison</td>
+                                           <td>Hi Joe, Happy Birthday you son of...</td>
+                                           <td><a href="#" class="modal-camera">Record Video</a></td>
+                                         </tr>
+                                         <tr>
+                                           <td><img src="img/fbpic.png" alt="person"/></td>
+                                           <td>Sal Paradise</td>
+                                           <td>Hi Sal, Happy Birthday you son of...</td>
+                                           <td><a href="#" class="modal-camera">Record Video</a></td>
+                                         </tr>
+                                         <tr>
+                                           <td><img src="img/fbpic.png" alt="person"/></td>
+                                           <td>Carlo Marx</td>
+                                           <td>Hi Carlo, Happy Birthday you son of...</td>
+                                           <td><a href="#" class="modal-camera">Record Video</a></td>
+                                         </tr>
+                                         <tr>
+                                           <td><img src="img/fbpic.png" alt="person"/></td>
+                                           <td>Carlo Marx</td>
+                                           <td>Hi Carlo, Happy Birthday you son of...</td>
+                                           <td><a href="#" class="modal-camera">Record Video</a></td>
+                                         </tr>
+                                         <tr>
+                                           <td><img src="img/fbpic.png" alt="person"/></td>
+                                           <td>Carlo Marx</td>
+                                           <td>Hi Carlo, Happy Birthday you son of...</td>
+                                           <td><a href="#" class="modal-camera">Record Video</a></td>
+                                         </tr>
+                                       </tbody>
+
+                                     </table>
+
+                                   </div>
+
+                                 </div><!--scheduled-->
+
+<!--=-=-=-=-=-FOOTER (EMPTY NOW)=-=-=-=-=-->
+                                 <footer></footer>
+
+
+<!--=-=-=-=-=-SOCIAL NETWORKING MODAL (CLICK BLUE DOT TO OPEN)=-=-=-=-=-->
+                                 <!--Pop up Stuff for selecting social network and friend to Sociagram-->
+
+                                 <div id="faded-background"  style="display:none;">
+                                  <div id="social-network-selection-container">
+
+                                   <div id="social-network-selection">
+                                     <div id="box-for-social-bg">
+                                      <a href="#" class="pop-up-email-icon social-hover"></a>
+
+                                      <a href="#" class="pop-up-twt-icon social-hover"></a>
+
+                                      <a href="#" class="pop-up-fb-icon social-hover"></a>
+                                    </div>
+                                    <div class="exit-social"></div>
+                                    <div class="right-pointing-tool-tip-far-right"></div>
+
+                                  </div><!--close social network selection-->
+
+
+                                  <div id="facebook-friend-selector" style="display:none;">
+                                   <div id="fb-title-section">
+                                    <div class="facebook-icon-spelled-out"></div>
+                                    <p>friends:</p>
+                                  </div>
+
+                                  <div id="friend-list-container">
+                                    <ul>
+
+                                      <li>
+                                        <div class="chkbox">
+                                         <span class="chkbox-box"></span>
+                                         <span class="chkbox-check"></span>
+                                       </div><!--close chkbox-->
+                                       <div class="social-thumb "></div>
+                                       <p class="social-name">Andy Anderson</p>
+                                     </li>
+
+                                     <li>
+                                      <div class="chkbox">
+                                       <span class="chkbox-box"></span>
+                                       <span class="chkbox-check"></span>
+                                     </div><!--close chkbox-->
+                                     <div class="social-thumb friend-2"></div>
+                                     <p class="social-name">Bill Billerson</p>
+                                   </li>
+
+                                   <li>
+                                    <div class="chkbox">
+                                     <span class="chkbox-box"></span>
+                                     <span class="chkbox-check"></span>
+                                   </div><!--close chkbox-->
+                                   <div class="social-thumb friend-3"></div>
+                                   <p class="social-name">Chris Christian</p>
+                                 </li>
+
+                                 <li>
+                                  <div class="chkbox">
+                                   <span class="chkbox-box"></span>
+                                   <span class="chkbox-check"></span>
+                                 </div><!--close chkbox-->
+                                 <div class="social-thumb friend-4"></div>
+                                 <p class="social-name">Don Donaldson</p>
+                               </li>
+
+                               <li>
+                                <div class="chkbox">
+                                 <span class="chkbox-box"></span>
+                                 <span class="chkbox-check"></span>
+                               </div><!--close chkbox-->
+                               <div class="social-thumb friend-5 "></div>
+                               <p class="social-name">Earnie Earnstien</p>
+                             </li>
+
+                             <li>
+                              <div class="chkbox">
+                               <span class="chkbox-box"></span>
+                               <span class="chkbox-check"></span>
+                             </div><!--close chkbox-->
+                             <div class="social-thumb friend-6"></div>
+                             <p class="social-name">Frank Dux</p>
+                           </li>
+
+                         </ul>
+                       </div><!--close friend list container-->
+
+                       <div class="exit-social"></div>
+                       <div class="right-pointing-tool-tip-far-right"></div>
+                     </div>
+
+                     <div id="twitter-friend-selector"  style="display:none;">
+                       <div id="twt-title-section">
+                        <div class="twitter-bird-on-white"></div>
+
+                        <p>Tweeters who follow you:</p>
+                      </div>
+
+                      <div id="friend-list-container">
+                        <ul>
+
+                          <li>
+                            <div class="chkbox">
+                             <span class="chkbox-box"></span>
+                             <span class="chkbox-check"></span>
+                           </div><!--close chkbox-->
+                           <div class="social-thumb "></div>
+                           <p class="social-name">Andy Anderson</p>
+                         </li>
+
+                         <li>
+                          <div class="chkbox">
+                           <span class="chkbox-box"></span>
+                           <span class="chkbox-check"></span>
+                         </div><!--close chkbox-->
+                         <div class="social-thumb friend-2"></div>
+                         <p class="social-name">Bill Billerson</p>
+                       </li>
+
+                       <li>
+                        <div class="chkbox">
+                         <span class="chkbox-box"></span>
+                         <span class="chkbox-check"></span>
+                       </div><!--close chkbox-->
+                       <div class="social-thumb friend-3"></div>
+                       <p class="social-name">Chris Christian</p>
+                     </li>
+
+                     <li>
+                      <div class="chkbox">
+                       <span class="chkbox-box"></span>
+                       <span class="chkbox-check"></span>
+                     </div><!--close chkbox-->
+                     <div class="social-thumb friend-4"></div>
+                     <p class="social-name">Don Donaldson</p>
+                   </li>
+
+                   <li>
+                    <div class="chkbox">
+                     <span class="chkbox-box"></span>
+                     <span class="chkbox-check"></span>
+                   </div><!--close chkbox-->
+                   <div class="social-thumb friend-5 "></div>
+                   <p class="social-name">Earnie Earnstien</p>
+                 </li>
+
+                 <li>
+                  <div class="chkbox">
+                   <span class="chkbox-box"></span>
+                   <span class="chkbox-check"></span>
+                 </div><!--close chkbox-->
+                 <div class="social-thumb friend-6"></div>
+                 <p class="social-name">Frank Dux</p>
+               </li>
+
+             </ul>
+           </div><!--close friend list container-->
+
+           <div class="exit-social"></div>
+           <div class="right-pointing-tool-tip-far-right"></div>
+         </div>
+
+         <div id="email-contact-selector"  style="display:none;">
+
+           <div id="email-title-box">
+            <p>Send Via Email</p>
+          </div>
+          <div id="added-emails"></div>
+          <form>
+           <label class="email-pop-label-top">Name:</label>
+           <input class="email-pop-text-top" type="text">
+           <label class="email-pop-label-bottom">Email:</label>
+           <input class="email-pop-text-bottom" type="text">
+           <input class="email-contact-button done-button" type="button" value="done">
+           <input class="email-contact-button" id="add-button" type="button" value="add">
+           <div class="exit-social"></div>
+           <div class="right-pointing-tool-tip-far-right"></div>
+         </form>
+
+       </div>
+
+     </div>
+<!--=-=-=-=-=-END SOCIAL NETWORKING MODAL=-=-=-=-=-->
+
+     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+     <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+     <script src="js/libs/jquery.formalize.min.js"></script>
+     <script src="js/libs/jquery-ui-1.8.20.custom.js"></script>
+     <script src="js/libs/jquery-ui-timepicker.js"></script>
+     <script src="js/script.js"></script>
+     <script src="js/plugins.js"></script>
+
+   </body>
+
+   </html>

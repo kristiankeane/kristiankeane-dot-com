@@ -1,0 +1,450 @@
+// Media Query Min 1000px ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+@media (min-width: 1000px)  {
+
+
+//-=-=- LEFT SIDEBAR -=-=-//
+	#sidebar {
+	    width: 20%;
+	    padding: 0 2% 2% 2%;
+
+	   h1 {
+			margin: 20px 0 20px 10px;
+			padding: 0 0 0 0;
+		}
+
+		img {
+			margin: 20px 0;
+			height: 44px;
+         width: 53px;
+		}
+
+		nav ul li a {
+		   width: 100%;
+		   padding: 10px 0;
+
+			&.active, &:hover {
+			   color: @blue;
+			}
+		}
+	}
+
+//-=-=- MAIN CONTENT -=-=-//
+	#main {
+	    width: 80%;
+	    padding: 0;
+	}
+
+	.createbar {
+		width: 100%;
+		padding: 0;
+		height: auto;
+		margin: 30px 0;
+
+	   h2 {
+			float: left;
+			height: auto;
+			line-height: 30px;
+	   }
+
+	   input[type="text"] {
+			height: 30px;
+			margin: 0 15px;
+			width: 40%;
+	   }
+
+	   a {
+			height: 30px;
+			line-height: 30px;
+		}
+	}
+
+	.areagroup ul {
+		max-width: 540px;
+	}
+
+ 	.projectgroup ul {
+     padding: 10px 0 0 0;
+
+     li {
+         height: 150px;
+         width: 23%;
+         margin: 0 1% 10px 1%;
+      }
+   }
+
+	.colone {
+	    width: 70%;
+	}
+
+	#createaccount .colone {
+		width: 50%;
+		padding: 0 2% 0 0;
+		border-right: 1px solid @grayLighter;
+	}
+
+	#signin .colone {
+		width: 25%;
+		padding: 0 3%;
+	}
+
+	.coltwo {
+	    width: 30%;
+	    padding: 0 2% 2% 2%;
+	}
+
+	#createaccount .coltwo {
+		width: 50%;
+		padding: 0 0 0 2%;
+	}
+
+	#signin .coltwo {
+		width: 75%;
+		padding: 0 5%;
+	}
+
+	.tabbed {
+
+	    nav {
+	        height: 30px;
+	 
+	      ul { 
+
+	         li a {
+					line-height: 30px;
+					height: 30px;
+					margin: 0 0 0 5%;
+					padding: 0 8% 0 2%;
+	         }
+	      }
+	   }
+	}
+
+
+}// END Media Query Min 1000px //
+
+// Media Query 625px to 999px ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+@media (min-width: 320px) and (max-width: 999px){
+	#sidebar {
+		nav ul li a {
+	   	width: 50px;
+	   	height: 50px;
+	   }
+
+		img {
+			margin: 20px auto;
+			float: none;
+			height: 44px;
+      	width: 53px;
+		}
+	}
+
+ 	.projectgroup ul {
+     padding: 10px 0 0 0;
+
+     li {
+         height: 150px;
+         width: 23%;
+         margin: 0 1% 10px 1%;
+      }
+   }
+
+	.colone {
+	    width: 70%;
+	}
+
+	#createaccount .colone {
+		width: 100%;
+		padding: 0 0 0 0;
+		border-right: none
+	}
+
+	#signin .colone {
+		width: 25%;
+		padding: 0 3%;
+	}
+
+	.coltwo {
+	    width: 30%;
+	    padding: 0 2% 2% 2%;
+	}
+
+	#createaccount .coltwo {
+		width: 100%;
+		padding: 0 0 0 0;
+	}
+
+	#signin .coltwo {
+		width: 75%;
+		padding: 0 0 0 0;
+		padding: 0 5%;
+	}
+
+	.tabbed {
+
+	    nav {
+	        height: 30px;
+	 
+	      ul { 
+
+	         li a {
+					line-height: 30px;
+					height: 30px;
+					margin: 0 0 0 5%;
+					padding: 0 8% 0 2%;
+	         }
+	      }
+	   }
+	}
+
+}// Media Query 625px to 999px //
+
+
+
+// Media Query 300px to 999px ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+@media (min-width: 300px) and (max-width: 999px) {
+
+	body {
+		background: @gray;
+	}
+
+//-=-=- LEFT SIDEBAR -=-=-//
+	#sidebar {
+	    width: 10%;
+	    padding: 0 0 2% 0;
+
+	   h1 {
+			display: none;
+		}
+
+		nav ul li a {
+		   background: @blue;
+		   text-indent: -500px;
+		   margin: 5px auto;
+		   float: none;
+		   padding: 0;
+		   .border-radius(5px);
+
+			&.active, &:hover {
+			   background-color: darken(@blue, 20%);
+			}
+		}
+	}
+
+//-=-=- MAIN CONTENT -=-=-//
+	#main {
+	    width: 90%;
+	    padding: 0;
+	    background: @white;
+	}
+
+	.createbar {
+		width: 100%;
+		padding: 0;
+		height: auto;
+		margin: 30px 0;
+
+	   h2 {
+			float: left;
+			height: auto;
+			line-height: 30px;
+	   }
+
+	   input[type="text"] {
+			height: 30px;
+			margin: 0 15px;
+			width: 40%;
+	   }
+
+	   a {
+			height: 30px;
+			line-height: 30px;
+		}
+	}
+
+
+}// Media Query 300px to 999px //
+
+
+
+// Media Query 950px to 999px ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+@media (min-width: 950px) and (max-width: 1100px) {
+
+	.areagroup ul {
+		max-width: 450px;
+	}
+
+}// END Media Query 950px to 999px //
+
+
+
+// Media Query 800px to 949px ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+@media (min-width: 800px) and (max-width: 949px) {
+
+	.areagroup ul {
+		max-width: 360px;
+	}
+
+}// Media Query 800px to 949px //
+
+
+
+// Media Query Min 625px ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+@media (min-width: 625px) {
+
+	#main header nav {
+
+	    ul li > * {
+			margin: 0 20px;
+	    }
+	}
+
+	#homenavigator {
+		> ul > li {
+		padding: 10px 0 0 0;
+		}
+	}
+
+}// Media Query Min 625px //
+
+
+
+// Media Query 300px to 799px ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+@media (min-width: 300px) and (max-width: 799px) {
+
+	.areagroup ul {
+		max-width: 270px;
+
+		li {
+			height: 40px;
+			width: 80px;
+      }
+
+		.split {
+		   height: 40px;
+		}
+	}
+
+}// Media Query 300px to 799px //
+
+
+
+// Media Query 300px to 624px ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+
+@media (min-width: 300px) and (max-width: 624px) {
+
+	#sidebar {
+		nav ul li a {
+	   	width: 34px;
+	   	height: 34px;
+	   }
+
+		img {
+			margin: 20px auto;
+			float: none;
+			height: 34px;
+      	width: 41px;
+		}
+	}
+
+	#main header nav {
+
+	    ul li > * {
+	        margin: 0 5px;
+	        font-size: 0.75em;
+	    }
+
+	    ul li a {
+
+			&#onrecordlink {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	#homenavigator {
+
+		> ul > li {
+		padding: 25px 0 20px 0;
+
+			h3 {
+				top: 3px;
+				font-size: 0.8em;
+			}
+		}
+	}
+
+ 	.projectgroup ul {
+     padding: 10px 0 0 0;
+
+     li {
+         height: 150px;
+         width: 48%;
+         margin: 0 1% 10px 1%;
+      }
+   }
+
+	.colone {
+	   width: 100%;
+	   label {
+			font-size: 80%;
+		}
+	}
+
+	.coltwo {
+	    width: 100%;
+	    margin-top: 20px;
+	    padding: 0;
+	}
+
+	.expenses {
+		border-left: none;
+		border-top-color: @gray;
+		background: @grayLightest;
+		padding: 10px 1%;
+	}
+
+	.daterange {
+	    padding: 0 2%;
+	}
+
+	.page {
+		top: 20px;
+	}
+
+	.tabbed {
+
+	    nav {
+	        height: 20px;
+	 
+	      ul { 
+
+	         li a {
+					line-height: 20px;
+					height: 20px;
+					margin: 0 0 0 1%;
+					padding: 0 3% 0 2%;
+					font-size: 0.8em;
+					border: none;
+					background: @grayLightest;
+
+					&.onrecordtab {
+					  background: transparent url(../img/full-leaf.png) 100% 5px no-repeat;
+					  padding: 0 5% 0 2%;
+					}					
+	         }
+	      }
+	   }
+	}
+
+}// Media Query 300px to 624px //
+
+
+
+
+
+
+
+
+
+
+

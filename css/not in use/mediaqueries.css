@@ -1,0 +1,460 @@
+/*BG waves animation*/
+@keyframes BGwaves {
+	0% { 
+		transform: translateX(0px); 
+	}
+   100% { 
+   	transform: translateX(100px); 
+   }
+}
+
+@-webkit-keyframes BGwaves {
+	0% { 
+		-webkit-transform: translateX(0px); 
+	}
+   100% { 
+   	-webkit-transform: translateX(100px);
+   }
+}
+
+@-moz-keyframes BGwaves {
+	0% { 
+		-moz-transform: translateX(0px); 
+	}
+   100% { 
+   	-moz-transform: translateX(100px); 
+   }
+}
+
+@-o-keyframes BGwaves {
+	0% { 
+		-o-transform: translateX(0px); 
+	}
+	100% { 
+		-o-transform: translateX(100px); 
+	}
+}
+
+/*front waves animation*/
+@keyframes waves {
+	0% { 
+		transform: translateX(0px); 
+	}
+	25% {
+		transform: translateX(25px); 
+	}
+	50% {
+		transform: translateX(50px); 
+	}
+	75% {
+		transform: translateX(70px); 
+	}
+   100% { 
+   	transform: translateX(100px);
+   }
+}
+
+@-webkit-keyframes waves {
+	0% { 
+		-webkit-transform: translateX(0px); 
+	}
+	25% {
+		-webkit-transform: translateX(25px); 
+	}
+	50% {
+		-webkit-transform: translateX(50px); 
+	}
+	75% {
+		-webkit-transform: translateX(70px); 
+	}
+   100% { 
+   	-webkit-transform: translateX(100px);
+   }
+}
+
+@-moz-keyframes waves {
+	0% { 
+		-moz-transform: translateX(0px); 
+	}
+	25% {
+		-moz-transform: translateX(25px); 
+	}
+	50% {
+		-moz-transform: translateX(50px); 
+	}
+	75% {
+		-moz-transform: translateX(70px); 
+	}
+   100% { 
+   	-moz-transform: translateX(100px);
+   }
+}
+
+@-o-keyframes waves {
+	0% { 
+		-o-transform: translateX(0px); 
+	}
+	25% {
+		-o-transform: translateX(25px); 
+	}
+	50% {
+		-o-transform: translateX(50px); 
+	}
+	75% {
+		-o-transform: translateX(70px); 
+	}
+   100% { 
+   	-o-transform: translateX(100px);
+   }
+}
+
+/*boat animation*/
+@keyframes boat {
+	0% { 
+		transform: translateY(0px); 
+	}
+   25% { 
+   	transform: translateY(-10px); 
+   }
+   75% { 
+   	transform: translateY(10px); 
+   }
+   100% { 
+   	transform: translateY(0px); 
+   }
+}
+
+@-webkit-keyframes boat {
+	0% { 
+		-webkit-transform: translateY(0px); 
+						transform: translateY(0px); 
+	}
+   25% { 
+   	-webkit-transform: translateY(-10px); 
+   	   	   	transform: translateY(-10px); 
+   }
+   75% { 
+   	-webkit-transform: translateY(10px); 
+   	   	   	transform: translateY(10px); 
+   }
+   100% { 
+   	-webkit-transform: translateY(0px); 
+   	   	   	transform: translateY(0px); 
+   }
+}
+
+@-moz-keyframes boat {
+	0% { 
+		-moz-transform: translateY(0px); 
+				transform: translateY(0px); 
+	}
+   25% { 
+   	-moz-transform: translateY(-10px); 
+   	   	transform: translateY(-10px); 
+   }
+   75% { 
+   	-moz-transform: translateY(10px); 
+   	   	transform: translateY(10px); 
+   }
+   100% { 
+   	-moz-transform: translateY(0px); 
+   	   	transform: translateY(0px); 
+   }
+}
+
+@-o-keyframes boat {
+	0% { 
+		-o-transform: translateY(0px); 
+	}
+   25% { 
+   	-o-transform: translateY(-10px); 
+   }
+   75% { 
+   	-o-transform: translateY(10px); 
+   }
+	0% { 
+		-o-transform: translateY(0px); 
+	}
+
+}
+/* ==== media queries ====================================================== */
+
+
+@media only screen and (min-width: 240px) {
+
+.js nav.category {
+	display: block;
+}
+
+article {
+	width: auto;
+	}
+	
+.js article {
+	margin: 5px;
+	}
+	
+nav.category ul {
+	max-width: 300px;
+}
+
+nav.category ul li {
+	min-width: 100px;
+	max-width: 100px;
+}
+
+nav.category ul li a {
+	text-align: right;
+	margin: 1%;
+	width: 98%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+}/*-----240px-----*/
+
+
+
+@media only screen and (min-width: 320px) {
+
+.col2.contactinfo li {
+	font-size: 90%;
+	margin-bottom: 10px;
+}
+
+p.bigpara {
+	font-size: 100%;
+	line-height: 1.2em;
+}
+
+article {
+	width: 300px;
+	}
+
+#blogbody article {
+	width: 100%;
+	max-width: 530px;
+	}
+
+	
+.js article {
+	margin: 5px;
+	}
+	
+
+
+}/*-----320px-----*/
+
+
+
+@media only screen and (min-width: 430px) {
+
+.col2.contactinfo li {
+	font-size: 120%;
+	margin-bottom: 15px;
+}
+
+p.bigpara {
+	font-size: 115%;
+}
+
+#layer1 {
+	background: transparent url(../img/bigbubbles.png) repeat ;
+	}
+	
+#layer2 {
+	background: transparent url(../img/midbubbles.png) repeat ;
+	}
+	
+#layer3 {
+	background: transparent url(../img/smallbubbles.png) repeat ;
+	}
+
+
+}/*-----430px-----*/
+
+
+@media only screen and (min-width: 625px) {
+
+.col2.contactinfo li {
+	font-size: 180%;
+	margin-bottom: 25px;
+}
+
+p.bigpara {
+	font-size: 135%;
+}
+
+.col1, .col2 {
+	float: left;
+	width: 39%;
+	margin: 0 1% 0 0;
+}
+
+.col2 {
+	width: 57%;
+	margin: 0 0 0 3%;
+}
+
+.col2 li {
+	font-size: 180%;
+	line-height: 115%;
+}
+
+h2.page-title {
+	font-size: 3em;
+	padding: 40px 2%;
+	}
+
+#aboutme h2.page-title, #contactme h2.page-title {
+	font-size: 3.5em;
+	padding: 40px 2% 0 2%;
+}
+
+header.main {
+	height: 300px;
+	/*background: url(../img/wavesforboat2.png) repeat-x -15% 100%, url(../img/kklogobig2.png) top left no-repeat;*/
+	background: transparent url(../img/kklogobig2.png) top left no-repeat;
+	background-color: #E5F7FF;
+}
+
+#aboutme header.main {
+	background: #273184;
+	background: url(../img/wavesforboat2.png) repeat-x -15% 100%, url(../img/kklogobiglight.png) top left no-repeat, -moz-linear-gradient(top,  #273184 0%, #a00920 47%, #ff7b0d 86%, #fcea4b 100%);
+	background: url(../img/wavesforboat2.png) repeat-x -15% 100%, url(../img/kklogobiglight.png) top left no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#273184), color-stop(47%,#a00920), color-stop(86%,#ff7b0d), color-stop(100%,#fcea4b));
+	background: url(../img/wavesforboat2.png) repeat-x -15% 100%, url(../img/kklogobiglight.png) top left no-repeat, -webkit-linear-gradient(top,  #273184 0%,#a00920 47%,#ff7b0d 86%,#fcea4b 100%);
+	background: url(../img/wavesforboat2.png) repeat-x -15% 100%, url(../img/kklogobiglight.png) top left no-repeat, -o-linear-gradient(top,  #273184 0%,#a00920 47%,#ff7b0d 86%,#fcea4b 100%);
+	background: url(../img/wavesforboat2.png) repeat-x -15% 100%, url(../img/kklogobiglight.png) top left no-repeat, -ms-linear-gradient(top,  #273184 0%,#a00920 47%,#ff7b0d 86%,#fcea4b 100%);
+	background: url(../img/wavesforboat2.png) repeat-x -15% 100%, url(../img/kklogobiglight.png) top left no-repeat, linear-gradient(top,  #273184 0%,#a00920 47%,#ff7b0d 86%,#fcea4b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273184', endColorstr='#fcea4b',GradientType=0 );
+	}
+
+#contactme header.main {
+	background: #000033;
+	background: url(../img/wavesforboat2.png) repeat-x -15% 100%, url(../img/kklogobiglight.png) top left no-repeat, -moz-linear-gradient(top,  #000033 0%, #24588d 100%);
+	background: url(../img/wavesforboat2.png) repeat-x -15% 100%, url(../img/kklogobiglight.png) top left no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000033), color-stop(100%,#24588d));
+	background: url(../img/wavesforboat2.png) repeat-x -15% 100%, url(../img/kklogobiglight.png) top left no-repeat, -webkit-linear-gradient(top,  #000033 0%,#24588d 100%);
+	background: url(../img/wavesforboat2.png) repeat-x -15% 100%, url(../img/kklogobiglight.png) top left no-repeat, -o-linear-gradient(top,  #000033 0%,#24588d 100%);
+	background: url(../img/wavesforboat2.png) repeat-x -15% 100%, url(../img/kklogobiglight.png) top left no-repeat, -ms-linear-gradient(top,  #000033 0%,#24588d 100%);
+	background: url(../img/wavesforboat2.png) repeat-x -15% 100%, url(../img/kklogobiglight.png) top left no-repeat, linear-gradient(top,  #000033 0%,#24588d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000033', endColorstr='#24588d',GradientType=0 );
+	}
+
+nav.category ul {
+	max-width: 1000px;
+	}
+
+nav.category ul li {
+	min-width: 10px;
+	max-width: 150px;
+}
+
+nav.category ul li a {
+	text-align: right;
+	margin: 2px;
+	width: auto;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+#boatholder {
+	display: block;
+	}
+
+#waves {
+	background: transparent url(../img/wavesforboat.png) repeat-x bottom left;
+	z-index: 4;
+	height: 50px;
+	width: 150%;
+	position: absolute;
+	bottom: 0;
+	left: -50%;
+	display: block;
+	-webkit-animation: waves 3s linear 0s infinite normal none;
+	-moz-animation: waves 3s linear 0s infinite normal none;
+	-o-animation: waves 3s linear 0s infinite normal none;
+	animation: waves 3s linear 0s infinite normal none;
+	}
+
+#bgwaves {
+	-webkit-animation: BGwaves 10s linear 0s infinite normal none;
+	-moz-animation: BGwaves 10s linear 0s infinite normal none;
+	-o-animation: BGwaves 10s linear 0s infinite normal none;
+	animation: BGwaves 10s linear 0s infinite normal none;
+}
+
+#myboat {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 30%;
+	z-index: 3;
+	background: transparent url(../img/myBoat.png) top left no-repeat;
+	height: 450px;
+	width: 700px;
+
+	-webkit-animation: boat 5s ease-in-out 0s infinite alternate none;
+	-moz-animation: boat 5s ease-in-out 0s infinite alternate none;
+	-o-animation: boat 5s ease-in-out 0s infinite alternate none;
+	animation: boat 5s ease-in-out 0s infinite alternate none;
+	}
+	
+#diver {
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	right: 40%;
+	z-index: 1;
+	background: transparent url(../img/diverwalking.png) bottom left repeat-x;
+	height: 350px;
+	width: 1000px;
+	}
+
+}/*-----625px-----*/
+
+@media only screen and (min-width: 768px) {
+
+}/*-----768px-----*/
+
+@media only screen and (min-width: 900px) {
+
+.mainnav ul li a {
+	padding: 6px 8px;
+	width: 85px;
+	max-width: 85px;
+	font-size: 100%;
+	height: 45px;
+	}
+	
+.mainnav ul li a.active, .mainnav ul li a.active:hover {
+	padding: 7px 8px 6px 8px;
+	}
+
+
+	}/*-----900px-----*/
+
+@media only screen and (min-width: 1024px) {
+
+#myboat {
+	left: 40%;
+	}
+
+	}/*-----1024px-----*/
+
+
+@media only screen and (min-width: 1200px) {
+	}/*-----1200px-----*/
+
+
+
+
+
+
+
+
+
+
+
+

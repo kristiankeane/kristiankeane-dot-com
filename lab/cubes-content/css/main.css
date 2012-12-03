@@ -1,0 +1,133 @@
+@import "normalize.min.css";
+
+@import "formalize.min.css";
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: visible;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+.block-holder {
+  margin: 0;
+  -webkit-perspective: 800;
+  -moz-perspective: 800;
+  perspective: 800;
+}
+.block {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  float: left;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.block span {
+  padding: 30% 0 0 0;
+  text-align: center;
+  display: block;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 150%;
+}
+.block h2 {
+  padding: 0;
+  margin: 10px 0 0 10px;
+  font-size: 350%;
+  float: left;
+  color: rgba(255, 255, 255, 0.3);
+}
+.block div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ade6fe;
+  opacity: 1.0;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.block div:hover {
+  opacity: 0.5;
+}
+.block div img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.block .front {
+  background: #faa937;
+}
+#block-one .right,
+#block-two .right,
+#block-three .left,
+#block-four .left {
+  background: #e4776f;
+}
+#block-one .left,
+#block-two .left,
+#block-three .right,
+#block-four .right {
+  background: #86cb86;
+}
+#block-one .back,
+#block-two .back,
+#block-three .back,
+#block-four .back {
+  background: #cde5ff;
+}
+#block-one .top,
+#block-two .bottom,
+#block-three .bottom,
+#block-four .top {
+  background: #ffe9a6;
+}
+@media (min-width: 240px) and (max-width: 1500px) {
+  
+}
