@@ -3,8 +3,8 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site: 
+  Kristian Keane Design & Development: Kristian Keane
+  Site: www.kristiankeane.com
   Twitter: 
   Location: 
 

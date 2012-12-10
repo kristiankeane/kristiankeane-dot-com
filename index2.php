@@ -25,7 +25,7 @@
 <body>
 
 
-<!--<div id="width"></div><!-- show width of page in conjunction with script-->
+<!--<div id="width">test changes here</div><!-- show width of page in conjunction with script-->
 
 <a href="#" class="closethis hidetext">close project viewer</a>
 
